@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supabas CRUD</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!--! Navbar  -->
+    <nav>
+        <div class="logo">Supabase CRUD</div>
+        <button class="updateBtn" id="openInsertModal">Insert Data</button>
+    </nav>
+
+    <!--! Table Container  -->
+    <div class="container">
+        <h2 class="title">Display All Data</h2>
+        <table class="table">
+            <tr>
+                <th>Id</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Delete</th>
+                <th>Update</th>
+            </tr>
+            
+        </table>
+    </div>
+
+    <!-- ! Insert Modal -->
+    <div class="insert-modal">
+        <div class="insert">
+            <button class="del-insert">
+                <i class="fa fa-times"></i>
+            </button>
+            <h2 class="title">Insert Data</h2>
+            <input type="text" id="insertFname" placeholder="First Name...">
+            <input type="text" id="insertLname" placeholder="Last Name...">
+            <input type="email" id="insertEmail" placeholder="Email...">
+            <input type="text" id="insertPhone" placeholder="Phone Number...">
+            <div class="btn-container">
+                <button class="updateBtn" id="insertData">Submit</button>
+            </div>
+        </div>
+    </div>
+
+       <!--! Upate Modal  -->
+       <div class="update-modal">
+        <div class="update">
+            <button class="del-update">
+                <i class="fa fa-times"></i>
+            </button>
+            <h2 class="title">Update Data</h2>
+            <input type="text" id="updateFname" placeholder="First Name...">
+            <input type="text" id="updateLname" placeholder="Last Name...">
+            <input type="email" id="updateEmail" placeholder="Email...">
+            <input type="text" id="updatePhone"  placeholder="Phone Number...">
+            <div class="btn-container">
+                <button class="updateBtn" id="updateData">Submit</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/7d678829bc.js" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
